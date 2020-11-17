@@ -1,0 +1,66 @@
+body {
+    background-color: whitesmoke
+  }
+
+  .parent {
+    height: 100%;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas:
+      "c m";
+  }
+
+  .label1 {
+  margin: 1 rem 0;
+  padding: 2rem;
+ 
+  border: 1px solid rgb(1, 1, 29);
+  border-radius: 1rem;
+
+  grid-area:c;
+
+  }
+
+
+  .label2 {
+    margin: 1 rem 0;
+    padding: 2rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+  
+    grid-area:m;
+  }
+  
+  img{
+    float:right;
+    margin:2px;
+    padding:2px;
+    border:none;
+}
+h2{
+  margin:1px;
+  padding:none;
+  font-weight: bold;
+}
+h3{
+  margin:1px;
+  padding:none;
+  color:grey;
+  font-size: 16px;
+  font-weight:lighter;
+}
+
+hr{
+color:grey;
+}
+button{
+  border:2px solid green;
+  padding:5px;
+  color: green;
+  margin:none;
+  font-size:16px;
+}
