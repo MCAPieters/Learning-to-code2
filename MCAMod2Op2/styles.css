@@ -1,0 +1,152 @@
+
+body {
+    background-color: lightgreen;
+  }
+   .parent {
+    height: 1000px;
+    width: 100%;
+    height: 100%;
+    font-family: "Martel Sans", sans-serif;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "h h h h h "
+      "n n n n n"
+      "m m m m m"
+      "f f f f f";
+   }
+h2{
+    padding:3px;
+    margin:2px;
+
+}
+   main li{
+       list-style: none;
+   }
+   a{ color:blue;
+    list-style:none;
+    text-decoration:none;
+   }
+
+    a[href="https://www.tasteofhome.com/collection/classic-irish-recipes/"]:hover {
+    color:lightblue;
+    font-weight: bold;
+   }
+    
+    a[href="https://www.tourismireland.com/"]:active{
+    color:red;
+    font-style: italic;
+        }
+
+    a[href="https://www.youtube.com/watch?v=o7pTNDyGVH4"]:visited {
+    color: yellow;
+        }
+   
+
+
+   
+   header{
+       background:blue;
+       grid-area: h;
+   }
+
+nav{
+       background-color: darkblue;
+       
+       grid-area:n
+   }
+nav ul{
+    padding-left:10px;
+}
+ 
+nav ul li{
+       display:inline;
+       margin: 5px;
+       padding: 7px;
+       border: none;
+       color:white;    
+   }
+
+nav ul li a{
+    text-decoration: none;
+    list-style:none; 
+    color:white;      
+   }
+
+nav ul li:hover{
+    background-color: lightblue;
+   
+}
+
+nav ul li a:hover{
+    background-color:lightblue;
+}
+.currentPage:hover{
+    background-color: gray;
+}
+
+.currentPage a:hover{
+    background-color: gray;
+}
+nav li:first-child{
+    background-color: goldenrod;
+    margin-left:none;
+    padding-left:none;
+    border-left:none;
+}
+
+
+#search{
+    font:white;
+    margin:3px;
+    padding:7px;
+}
+
+
+#search:focus{
+ outline:none;
+ border: 3px solid aqua;
+ color:black;
+}
+
+main{
+       background:pink;
+       grid-area:m
+   }
+
+   main p::first-letter{
+       font-size: 1.5em;
+       font-family:cursive;
+       color:goldenrod;
+   }
+main p::selection{
+    background-color:lightblue;
+    padding:3px;
+}
+
+
+
+#email{
+    margin:3px;
+    padding:3px;
+    color:white;
+
+}
+#email:focus{
+    color:green;
+    font-size:20px;
+}
+
+p{
+    margin:3px;
+    padding: 2px
+}
+
+   footer{
+       background:lightblue;
+       grid-area:f;
+       margin:3px;
+       padding:2px;
+   }
