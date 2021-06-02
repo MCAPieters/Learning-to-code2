@@ -1,0 +1,12 @@
+@mixin text(){
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.4em;
+    font-size: 18px;
+   
+}
+
+$colors-dark: #97d279;
+$colors-light:#ecffe9;
+$colors-header: #c0eea9;
+$padding: 20px;
